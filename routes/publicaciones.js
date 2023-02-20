@@ -31,5 +31,11 @@ const multer = require('multer');
 
     router.get('/', controller.traerTodo);
 
+    router.get('/:id', controller.traerPorId);
+
+    router.post('/', controller.crearPublicacion);
+
+    router.delete('/', controller.eliminarPublicacion);
+
 
     module.exports = router
