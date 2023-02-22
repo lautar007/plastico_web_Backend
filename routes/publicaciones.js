@@ -35,6 +35,8 @@ const multer = require('multer');
 
     router.post('/', controller.crearPublicacion);
 
+    router.put('/:id', controller.putPublicacion);
+
     router.delete('/', controller.eliminarPublicacion);
 
 

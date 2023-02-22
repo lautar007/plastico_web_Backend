@@ -30,6 +30,7 @@ const multer = require('multer');
     const controller = require('../controllers/portController');
 
     router.get('/', controller.traerPortadas);
+    router.post('/', controller.cambiarPortadas);
 
 
     module.exports = router
